@@ -9,7 +9,7 @@ body {
   background-color: #1d2a3b;
 }
 a {
-  color: #c66549;
+  color: #d1621c;
   text-decoration: none;
 }
 a:hover {
@@ -25,11 +25,15 @@ a:hover {
 header {
   padding: 0 2rem;
   text-align: center;
+  background-image: "images/hero.svg";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 h1 {
   font-family: "Ysabeau SC", sans-serif;
   font-size: 5rem;
-  color: #c66549;
+  color: #d1621c;
   padding: 0;
   margin-bottom: 0.15rem;
 }
@@ -80,9 +84,12 @@ section {
   grid-auto-rows: 1fr;
 }
 .topics div {
-  background: #3da5da;
+  background: #004975;
   border-radius: 8px;
   padding: 2rem;
+}
+.topics h2 {
+  margin: 0;
 }
 .speakers {
   width: 100%;
