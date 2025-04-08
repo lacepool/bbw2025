@@ -70,6 +70,15 @@ h2 {
 .date-location p {
   font-size: 1.25rem;
 }
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 .button {
   color: #9c450e;
   margin-top: 0.5rem;
