@@ -5,6 +5,7 @@ body {
   position: relative;
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -43,8 +44,9 @@ header {
   text-align: center;
 }
 h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 5rem;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 5.5rem;
+  font-weight: 600;
   color: #d1621c;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ffc56e;
@@ -56,26 +58,17 @@ h1 {
        1px 1px 0 #9c450e;
 
   padding: 0;
-  margin-bottom: 0.15rem;
+  margin: 2rem 0 0 0.15rem;
 }
 h2 {
+  font-family: "Noto Sans", sans-serif;
   margin-bottom: 3rem;
 }
-header p {
-  font-size: 1.25rem;
-}
 .date-location {
-  margin: 1rem 0;
-  font-weight: normal;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  margin: 1.5rem 0;
 }
 .date-location p {
   font-size: 1.25rem;
-  text-align: right;
 }
 .button {
   color: #9c450e;
@@ -121,6 +114,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1.5rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 .speakers img {
   width: 100px;
