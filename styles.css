@@ -11,9 +11,11 @@ body {
   margin: 0;
   padding: 0;
   color: #fffde5;
-  background-color: #170c1d;
-  background-image: radial-gradient(at 50% 10%, hsla(23,76%,46%, .25) 25%, transparent 50%);
+  background-color: #3b043b;
+  background-image: radial-gradient(at 50% 50%, hsla(23,76%,46%, .35) 20%, transparent 50%);
   background-repeat: no-repeat;
+  background-size: 200% 200%;
+  animation: gradient 10s ease-in-out infinite;
 }
 .bg {
   position: fixed;
@@ -29,7 +31,7 @@ body {
   background-origin: content-box;
   background-repeat: no-repeat;
   background-image: url("images/bg.webp");
-  opacity: .85;
+  opacity: .6;
 }
 footer {
   position: fixed;
@@ -171,3 +173,18 @@ section {
 .silver img { width: 100px; }
 .gold img { width: 150px; }
 .platinum img { width: 200px; }
+
+@keyframes gradient {
+	0% {
+		background-position: 50% 50%;
+	}
+	25% {
+		background-position: 100% 50%;
+	}
+	75% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 50% 50%;
+	}
+}
