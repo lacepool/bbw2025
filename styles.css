@@ -10,7 +10,7 @@ body {
   font-style: normal;
   margin: 0;
   padding: 0;
-  color: #fffde5;
+  color: #dd94ff;
   background-color: #3b043b;
   background-image: radial-gradient(at 50% 50%, hsla(23,76%,46%, .35) 20%, transparent 50%);
   background-repeat: no-repeat;
@@ -44,8 +44,8 @@ footer {
     radial-gradient(at 50% 90%, rgba(30, 12, 34, .75) 20%, transparent 75%);
 }
 a {
-  color: #d1621c;
-  text-decoration: none;
+  color: #c50efdbf;
+  text-decoration: underline;
 }
 a:hover {
   text-decoration: none;
@@ -66,7 +66,7 @@ h1 {
   font-family: "Bungee Hairline", sans-serif;
   font-size: 6.5rem;
   font-weight: 400;
-  color: #cc5fff;
+  color: #dd94ff;
   line-height: 0.9;
   padding: 0;
   margin: 3rem 0 0 0;
@@ -83,7 +83,7 @@ h2 {
   font-size: 1.1rem;
   letter-spacing: 3px;
   font-weight: 300;
-  color: #cc5fff;
+  color: #d178fa;
 }
 .date-location {
   margin: 2.5rem 0;
@@ -91,20 +91,11 @@ h2 {
 .date-location p {
   font-size: 1.25rem;
 }
-.cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
 .button {
-  color: #120a14;
+  color: #8600c4;
   margin-top: 0.5rem;
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   background-color: #fdfff4;
   background-image: linear-gradient(0deg, #cc5fff 0%, #f2d6ff 3px, #e7b9fc 95%, #fdfff4 99%);
   border-radius: 3px;
@@ -114,15 +105,19 @@ h2 {
   transition: all 0.2s ease-in-out;
 }
 .button:hover {
-  color: #8600c4;
+  color: #510077;
 }
 section {
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
 }
+.description {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
 .topics {
-  margin: 5rem auto 1rem auto;
   display: grid;
   gap: 0.75rem;
   text-align: center;
