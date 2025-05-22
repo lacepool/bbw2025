@@ -74,6 +74,32 @@
       height: 520vh;
     }
 
+    .scroll-indicator {
+      position: absolute;
+      bottom: 0%;
+      left: 50%;
+      border: solid var(--liquid-color);
+      border-width: 0 6rem 6rem 0;
+      display: inline-block;
+      padding: 6rem;
+      transform: translate(-50%, -50%) rotate(45deg);
+      color: var(--liquid-color);
+      opacity: 0.5;
+      animation: scrollDown linear forwards;
+      animation-timeline: scroll(root);
+      animation-range: 0vh 250vh;
+      pointer-events: none;
+    }
+
+    @keyframes scrollDown {
+      0%, 80% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
     .glass {
       position: sticky;
       top: 0;
@@ -140,6 +166,7 @@
       right: 25%;
       height: 35%;
       width: 50%;
+      overflow: hidden;
       background: linear-gradient(90deg, black, #2d0033);
       animation: dropIn linear forwards;
       animation-timeline: scroll(root);
@@ -627,10 +654,9 @@
 </head>
 <body>
   <section id="intro" class="row">
-
     <div class="splash">
       <div class="glass">
-        <div class="mass"></div>
+        <div class="mass"><div class="scroll-indicator"></div></div>
         <div class="liquid">
           <svg class="onde" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 18 120 60" preserveAspectRatio="none" shape-rendering="auto">
